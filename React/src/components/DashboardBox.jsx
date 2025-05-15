@@ -18,9 +18,9 @@ export default function DashBoardBox(props) {
       )}
       <div className="box-content">
         <h1 className="title">{title}</h1>
-        <h2 className="current-total">{hours}</h2>
+        <h2 className="current-total">{hours} hrs</h2>
         <p className="last-total">
-          Last {duration} - {total}
+          Last {duration} - {total} hrs
         </p>
       </div>
     </div>

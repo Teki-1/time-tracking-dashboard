@@ -8,7 +8,11 @@ export default function PersonDisplay() {
       <p className="report">Report for</p>
       <h1 className="name">Nour</h1>
       <h1 className="name">Mohamed</h1>
-      <div className="filter-box"></div>
+      <div className="filter-box">
+        <p> Daily</p>
+        <p> Weekly</p>
+        <p>Monthly</p>
+      </div>
     </div>
   );
 }
