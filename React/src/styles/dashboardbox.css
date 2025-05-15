@@ -1,9 +1,47 @@
 .box-container {
+  margin-left: 5px;
   display: grid;
   grid-template-rows: 250px 250px;
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: 300px 300px 300px;
+
+  row-gap: 15px;
+  column-gap: 15px;
 }
 .background-art {
   width: 250px;
   border-radius: 25px;
+  height: 100px;
+}
+.box-content {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 30px;
+}
+.title {
+  font-size: 18px;
+  margin-top: 50px;
+  margin-left: 30px;
+  padding-top: 20px;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+.current-total {
+  font-size: 50px;
+  margin-left: 30px;
+  font-family: "Rubik";
+  font-weight: 400;
+}
+.last-total {
+  margin-left: 30px;
+  font-family: "Rubik";
+  padding-bottom: 20px;
+  font-weight: 300;
+  color: hsl(236, 100%, 87%);
+}
+html {
+  background-color: hsl(226, 43%, 10%);
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"), url("../assets/fonts/Rubik-VariableFont_wght.ttf");
 }

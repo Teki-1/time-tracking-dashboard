@@ -6,6 +6,7 @@ export default function DashboardDisplay() {
   return (
     <div className="box-container">
       <DashBoardBox
+        color="hsl(15, 100%, 70%)"
         title={time[0].title}
         hours={time[0].timeframes.weekly.current}
         duration="week"

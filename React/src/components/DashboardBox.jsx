@@ -2,7 +2,7 @@ import "react";
 
 export default function DashBoardBox(props) {
   return (
-    <div className="background-art" style={{ backgorundColor: props.color }}>
+    <div className="background-art" style={{ backgroundColor: props.color }}>
       <div className="box-content">
         <h1 className="title">{props.title}</h1>
         <h2 className="current-total">{props.hours}</h2>
