@@ -1,0 +1,9 @@
+.box-container {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 250px 250px 250px;
+}
+.background-art {
+  width: 250px;
+  border-radius: 25px;
+}
