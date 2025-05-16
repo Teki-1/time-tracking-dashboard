@@ -1,7 +1,8 @@
 import "../styles/userbox.css";
 import profileImage from "../assets/images/nour.jpg";
 
-export default function PersonDisplay() {
+export default function PersonDisplay({ currentFilter, onChangeFilter }) {
+  const filters = ["daily", "weekly", "monthly"];
   return (
     <div className="username">
       <img src={profileImage} className="user-image" />
@@ -9,9 +10,19 @@ export default function PersonDisplay() {
       <h1 className="name">Nour</h1>
       <h1 className="name">Mohamed</h1>
       <div className="filter-box">
-        <p> Daily</p>
-        <p> Weekly</p>
-        <p>Monthly</p>
+        {filters.map((filter) => (
+          <button
+            key={filter}
+            onClick={() => onChangeFilter(filter)}
+            className={
+              currentFilter === filter
+                ? "filter-button active"
+                : "filter-button"
+            }
+          >
+            {filter.charAt(0).toUpperCase() + filter.slice(1)}
+          </button>
+        ))}
       </div>
     </div>
   );

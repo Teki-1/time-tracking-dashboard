@@ -30,9 +30,29 @@
   background-color: hsl(235, 46%, 20%);
   border-radius: 10px;
   height: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
 @font-face {
   font-family: "Rubik";
   src: local("Rubik"), url("../assets/fonts/Rubik-VariableFont_wght.ttf");
+}
+
+.filter-button.active {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.filter-button {
+  background-color: transparent;
+  border: none;
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+  text-align: left;
 }
