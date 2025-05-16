@@ -4,11 +4,17 @@ import profileImage from "../assets/images/nour.jpg";
 export default function PersonDisplay({ currentFilter, onChangeFilter }) {
   const filters = ["daily", "weekly", "monthly"];
   return (
-    <div className="username">
-      <img src={profileImage} className="user-image" />
-      <p className="report">Report for</p>
-      <h1 className="name">Nour</h1>
-      <h1 className="name">Mohamed</h1>
+    <div className="user-container">
+      <div className="username">
+        {" "}
+        <img src={profileImage} className="user-image" />
+        <p className="report">Report for</p>
+        <p className="name">
+          Nour <br />
+          Mohamed
+        </p>
+      </div>
+
       <div className="filter-box">
         {filters.map((filter) => (
           <button
