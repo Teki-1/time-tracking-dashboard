@@ -3,7 +3,7 @@ import time from "../data/time";
 import "../styles/dashboardbox.css";
 import Work from "../assets/images/icon-work.svg?react";
 import Study from "../assets/images/icon-study.svg?react";
-import Social from "../assets/images/icon-Social.svg?react";
+import Social from "../assets/images/icon-social.svg?react";
 import SelfCare from "../assets/images/icon-self-care.svg?react";
 import Play from "../assets/images/icon-play.svg?react";
 import Excercise from "../assets/images/icon-exercise.svg?react";
